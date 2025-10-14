@@ -110,12 +110,12 @@ const Manifesto = () => {
         <div className="console-line">Fewer logins. Fewer meetings. Faster output.</div>
         <div className="console-line">&nbsp;</div>
         <div className="console-line">For producers, journalists and creative leads who need work that moves at the speed of thought.</div>
-        <div className="console-line">We stitch Claude Code, Cursor, GitHub and your vaults into a single workspace that remembers context, runs background research, and delivers previewed outputs — on your terms.</div>
+        <div className="console-line">We integrate tools and systems into a single workspace that remembers context, runs background research, and delivers previewed outputs — on your terms.</div>
         <div className="console-line">&nbsp;</div>
         <div className="console-line">No public portfolios. No case studies posted here.</div>
         <div className="console-line">Everything is confidential by default. Access is by introduction.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">GIZMET.DEV builds systems that work in production: reliable webhooks, versioned source, secure sync, and scripted previews you can send to a client in hours not days.</div>
+        <div className="console-line">GIZMET.DEV builds systems that work in production: reliable infrastructure, versioned source, secure sync, and scripted previews you can send to a client in hours not days.</div>
         <div className="console-line">&nbsp;</div>
         <div className="console-line">This is practical R&D for people who make things happen.</div>
       </div>

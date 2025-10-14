@@ -10,8 +10,8 @@
   color: #9ef09e;
   font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.02em;
+  line-height: 2.2;
+  letter-spacing: 0.08em;
 }
 
 .console-container {
@@ -29,9 +29,10 @@
 }
 
 .console-line {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   white-space: pre-wrap;
   word-break: break-word;
+  word-spacing: 0.1em;
 }
 
 .cursor {
