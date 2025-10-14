@@ -1,34 +1,118 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.App {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #9ef09e;
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.console-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
 }
 
-.App-link {
-    color: #61dafb;
+.console-content {
+  max-width: 700px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.console-line {
+  margin-bottom: 0.4rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: #baf7b4;
+  margin-left: 2px;
+  opacity: 0;
+  transition: none;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+
+.console-email {
+  color: #9ef09e;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.console-email:hover {
+  border-bottom-color: #9ef09e;
+}
+
+.manifesto-link {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: #9ef09e;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.manifesto-link:hover {
+  opacity: 1;
+}
+
+.manifesto-content {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
+  
+  .console-container {
+    padding: 1.5rem;
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+  
+  .manifesto-link {
+    top: 1rem;
+    right: 1rem;
+    font-size: 12px;
+  }
+}
+
+/* Selection styling */
+::selection {
+  background: #9ef09e;
+  color: #0a0a0a;
+}
+
+::-moz-selection {
+  background: #9ef09e;
+  color: #0a0a0a;
 }
