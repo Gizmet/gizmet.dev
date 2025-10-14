@@ -10,14 +10,14 @@ const Console = () => {
   const [bootComplete, setBootComplete] = useState(false);
 
   const consoleLines = [
-    "> GIZMET.DEV  [creative skunkworks]",
+    "> GIZMET.DEV  [creative systems lab]",
     "",
     "initialising systems...",
     "handshake verified.",
-    "local intelligence active.",
+    "workspace environment active.",
     "",
-    "Private infrastructure for off-record projects.",
-    "No dashboards. No clients. No noise.",
+    "Integrated infrastructure for high-trust creative work.",
+    "Secure, efficient — fewer steps from idea to execution.",
     "",
     "contact: gizmet@protonmail.com"
   ];
