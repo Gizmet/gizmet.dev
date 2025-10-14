@@ -106,23 +106,23 @@ const Manifesto = () => {
       <div className="console-content manifesto-content">
         <div className="console-line">&gt; MANIFESTO</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">We build in private.</div>
-        <div className="console-line">No timelines. No milestones. No visibility.</div>
+        <div className="console-line">We build systems that remove drag.</div>
+        <div className="console-line">Less process. More progress.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">This is infrastructure for experiments that don't need permission.</div>
-        <div className="console-line">For work that happens off-grid, outside business hours,</div>
-        <div className="console-line">in the margins where curious people operate best.</div>
+        <div className="console-line">For people who think faster than meetings move.</div>
+        <div className="console-line">For ideas that can't sit in decks waiting for approval.</div>
+        <div className="console-line">For work that needs to exist now — not after procurement.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">No portfolios. No case studies. No proof of concept.</div>
-        <div className="console-line">Just quiet momentum and deliberate craft.</div>
+        <div className="console-line">No dashboards. No forms. No second-guessing.</div>
+        <div className="console-line">Just clear paths from concept to creation.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">If you need a dashboard, this isn't for you.</div>
-        <div className="console-line">If you need validation, you're in the wrong lab.</div>
+        <div className="console-line">GIZMET.DEV exists in the background —</div>
+        <div className="console-line">quiet infrastructure for restless minds.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">GIZMET.DEV operates on trust and discretion.</div>
-        <div className="console-line">No noise. No theatre. No exit strategy.</div>
+        <div className="console-line">No press. No spectacle.</div>
+        <div className="console-line">Only the work, built clean and fast.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">This is the skunkworks.</div>
+        <div className="console-line">This is where creative momentum lives.</div>
       </div>
     </div>
   );
