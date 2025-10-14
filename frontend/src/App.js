@@ -106,23 +106,18 @@ const Manifesto = () => {
       <div className="console-content manifesto-content">
         <div className="console-line">&gt; MANIFESTO</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">We build systems that remove drag.</div>
-        <div className="console-line">Less process. More progress.</div>
+        <div className="console-line">We remove friction between idea and creation.</div>
+        <div className="console-line">Fewer logins. Fewer meetings. Faster output.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">For people who think faster than meetings move.</div>
-        <div className="console-line">For ideas that can't sit in decks waiting for approval.</div>
-        <div className="console-line">For work that needs to exist now — not after procurement.</div>
+        <div className="console-line">For producers, journalists and creative leads who need work that moves at the speed of thought.</div>
+        <div className="console-line">We stitch Claude Code, Cursor, GitHub and your vaults into a single workspace that remembers context, runs background research, and delivers previewed outputs — on your terms.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">No dashboards. No forms. No second-guessing.</div>
-        <div className="console-line">Just clear paths from concept to creation.</div>
+        <div className="console-line">No public portfolios. No case studies posted here.</div>
+        <div className="console-line">Everything is confidential by default. Access is by introduction.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">GIZMET.DEV exists in the background —</div>
-        <div className="console-line">quiet infrastructure for restless minds.</div>
+        <div className="console-line">GIZMET.DEV builds systems that work in production: reliable webhooks, versioned source, secure sync, and scripted previews you can send to a client in hours not days.</div>
         <div className="console-line">&nbsp;</div>
-        <div className="console-line">No press. No spectacle.</div>
-        <div className="console-line">Only the work, built clean and fast.</div>
-        <div className="console-line">&nbsp;</div>
-        <div className="console-line">This is where creative momentum lives.</div>
+        <div className="console-line">This is practical R&D for people who make things happen.</div>
       </div>
     </div>
   );
