@@ -593,6 +593,11 @@ code, .terminal-line, .logo, .section-label {
 .use-case-card:hover {
   border-color: var(--green-primary);
   box-shadow: 0 0 30px rgba(0, 255, 65, 0.15);
+  transform: translateX(8px);
+}
+
+.use-case-card:hover .use-case-number {
+  color: rgba(0, 255, 65, 0.4);
 }
 
 .use-case-number {
