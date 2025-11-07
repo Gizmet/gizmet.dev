@@ -453,6 +453,14 @@ code, .terminal-line, .logo, .section-label {
   border-radius: 8px;
   margin-bottom: 1.5rem;
   color: var(--green-primary);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover .card-icon {
+  background: rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+  border-color: var(--green-primary);
 }
 
 .card-icon svg {
