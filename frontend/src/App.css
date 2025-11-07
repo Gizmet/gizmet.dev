@@ -307,6 +307,25 @@ code, .terminal-line, .logo, .section-label {
   box-shadow: 0 0 40px rgba(0, 255, 65, 0.1);
 }
 
+.visual-container::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--green-primary) 0%, transparent 50%, var(--green-primary) 100%);
+  border-radius: 8px;
+  opacity: 0.3;
+  z-index: -1;
+  animation: borderPulse 3s ease-in-out infinite;
+}
+
+@keyframes borderPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
 .hero-image {
   width: 100%;
   height: auto;
