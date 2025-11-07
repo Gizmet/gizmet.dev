@@ -250,9 +250,9 @@ const LandingPage = () => {
             <div className="container">
               <div className="break-text">
                 <div className="section-label">[transformation]</div>
-                <h2 className="break-title">From Multi-Person Teams<br />To Single-Operator Scale</h2>
+                <h2 className="break-title">48 Hours vs 5 Months<br />Single Operator vs Full Teams</h2>
                 <p className="break-description">
-                  What used to take a full development team months can now be delivered by one operator in days. Same quality. Same depth. Exponentially faster.
+                  880 hours of traditional development compressed into 48. Not through shortcuts - through veteran expertise amplified by precision systems. 18x faster. 55x more efficient.
                 </p>
               </div>
             </div>
