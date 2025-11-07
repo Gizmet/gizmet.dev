@@ -71,7 +71,7 @@ const LandingPage = () => {
             <p className="hero-subtitle">
               Complete development packages in days, not months.
               Research → Structure → Treatment → Production → Pitch.
-              <span className="highlight-text"> All automated.</span>
+              <span className="highlight-text"> Veteran-driven velocity.</span>
             </p>
             <div className="hero-stats">
               <div className="stat">
