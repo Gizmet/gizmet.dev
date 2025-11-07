@@ -121,19 +121,19 @@ const LandingPage = () => {
               <ul className="problem-list">
                 <li className="problem-item">
                   <span className="problem-icon">×</span>
-                  <span>Multi-month timelines with full teams</span>
+                  <span>4-7 months per project (880+ hours)</span>
                 </li>
                 <li className="problem-item">
                   <span className="problem-icon">×</span>
-                  <span>High risk development investment</span>
+                  <span>Multi-person teams, high burn rate</span>
                 </li>
                 <li className="problem-item">
                   <span className="problem-icon">×</span>
-                  <span>Limited project capacity</span>
+                  <span>Limited parallel development capacity</span>
                 </li>
                 <li className="problem-item">
                   <span className="problem-icon">×</span>
-                  <span>Incomplete pitch packages</span>
+                  <span>Incomplete packages, uncertain outcomes</span>
                 </li>
               </ul>
             </div>
