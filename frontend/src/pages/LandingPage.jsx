@@ -143,19 +143,19 @@ const LandingPage = () => {
               <ul className="solution-list">
                 <li className="solution-item">
                   <span className="solution-icon">✓</span>
-                  <span>Days not months - rapid turnaround</span>
+                  <span>48 hours per project (18x faster)</span>
                 </li>
                 <li className="solution-item">
                   <span className="solution-icon">✓</span>
-                  <span>Low risk speculative development</span>
+                  <span>Single operator (55x person-hour efficiency)</span>
                 </li>
                 <li className="solution-item">
                   <span className="solution-icon">✓</span>
-                  <span>Develop multiple projects in parallel</span>
+                  <span>Develop 5+ projects simultaneously</span>
                 </li>
                 <li className="solution-item">
                   <span className="solution-icon">✓</span>
-                  <span>Complete broadcast-ready packages</span>
+                  <span>Complete packages, zero uncertainty</span>
                 </li>
               </ul>
             </div>
