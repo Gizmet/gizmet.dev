@@ -460,6 +460,8 @@ code, .terminal-line, .logo, .section-label {
   min-height: 60vh;
   display: flex;
   align-items: center;
+  border-top: 1px solid var(--gray-border);
+  border-bottom: 1px solid var(--gray-border);
 }
 
 .visual-break-content {
@@ -472,6 +474,7 @@ code, .terminal-line, .logo, .section-label {
   height: 60vh;
   object-fit: cover;
   display: block;
+  filter: brightness(0.5) contrast(1.1);
 }
 
 .break-overlay {
@@ -480,13 +483,26 @@ code, .terminal-line, .logo, .section-label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(10, 10, 10, 0.98) 0%, rgba(10, 10, 10, 0.6) 60%, rgba(10, 10, 10, 0.85) 100%);
   display: flex;
   align-items: center;
 }
 
+.break-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 65, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
 .break-text {
   max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 
 .break-title {
@@ -495,6 +511,7 @@ code, .terminal-line, .logo, .section-label {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
 }
 
 .break-description {
