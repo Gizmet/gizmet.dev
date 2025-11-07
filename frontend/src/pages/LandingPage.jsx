@@ -69,9 +69,9 @@ const LandingPage = () => {
               <span className="gradient-text">At Machine Speed</span>
             </h1>
             <p className="hero-subtitle">
-              Complete development packages in days, not months.
+              What takes traditional teams 4-7 months, delivered in 48 hours.
               Research → Structure → Treatment → Production → Pitch.
-              <span className="highlight-text"> Veteran-driven velocity.</span>
+              <span className="highlight-text"> Single operator. Full package.</span>
             </p>
             <div className="hero-stats">
               <div className="stat">
