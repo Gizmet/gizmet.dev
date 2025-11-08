@@ -68,6 +68,10 @@ const LandingPage = () => {
               Documentary Development<br />
               <span className="gradient-text">At Machine Speed</span>
             </h1>
+            <div className="patent-badge">
+              <span className="patent-icon">◆</span>
+              <span className="patent-text">PATENT PENDING</span>
+            </div>
             <p className="hero-subtitle">
               What takes traditional teams 4-7 months, delivered in 48 hours.
               Research → Structure → Treatment → Production → Pitch.
