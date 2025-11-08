@@ -429,7 +429,8 @@ const LandingPage = () => {
                 <span className="logo-bracket">]</span>
               </div>
               <p className="footer-tagline">by GIZMET.DEV [creative systems lab]</p>
-              <p className="footer-patent">◆ PATENT PENDING</p>
+              <p className="footer-copyright">© 2025 Gizmet.dev / Michael Needs</p>
+              <p className="footer-patent">Patent Pending (UK Patent Application GB2518692.5)</p>
             </div>
             <div className="footer-right">
               <p className="footer-text">Integrated infrastructure for high-trust creative work.</p>
