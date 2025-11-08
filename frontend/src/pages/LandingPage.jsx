@@ -410,7 +410,7 @@ const LandingPage = () => {
                   gizmet@protonmail.com
                 </a>
                 <p className="cta-note">
-                  Technical architecture, implementation details, and operational processes are proprietary. Patent pending.
+                  Technical architecture, implementation details, and operational processes are proprietary. Patent Pending (UK Patent Application GB2518692.5).
                 </p>
               </div>
             </div>
