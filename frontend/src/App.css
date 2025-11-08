@@ -792,6 +792,15 @@ code, .terminal-line, .logo, .section-label {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.footer-patent {
+  font-size: 0.75rem;
+  color: var(--green-primary);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
 .footer-right {
   text-align: right;
 }
