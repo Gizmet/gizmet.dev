@@ -185,9 +185,34 @@ code, .terminal-line, .logo, .section-label {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #ffffff;
   letter-spacing: -0.02em;
+}
+
+.patent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.patent-icon {
+  color: var(--green-primary);
+  font-size: 0.75rem;
+}
+
+.patent-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--green-primary);
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 .gradient-text {
