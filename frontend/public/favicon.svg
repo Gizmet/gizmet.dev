@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Black background -->
+  <rect width="512" height="512" fill="#0a0a0a"/>
+
+  <!-- Glowing G -->
+  <g filter="url(#glow)">
+    <path d="M 256 80
+             C 350 80, 420 150, 420 244
+             C 420 338, 350 408, 256 408
+             C 162 408, 92 338, 92 244
+             C 92 150, 162 80, 256 80
+             M 256 140
+             C 195 140, 152 183, 152 244
+             C 152 305, 195 348, 256 348
+             C 290 348, 320 333, 340 310
+             L 340 270
+             L 270 270
+             L 270 220
+             L 390 220
+             L 390 330
+             C 360 380, 312 408, 256 408
+             Z"
+          fill="#00ff41"
+          stroke="#00ff41"
+          stroke-width="6"/>
+  </g>
+
+  <!-- Inner glow -->
+  <path d="M 256 80
+           C 350 80, 420 150, 420 244
+           C 420 338, 350 408, 256 408
+           C 162 408, 92 338, 92 244
+           C 92 150, 162 80, 256 80
+           M 256 140
+           C 195 140, 152 183, 152 244
+           C 152 305, 195 348, 256 348
+           C 290 348, 320 333, 340 310
+           L 340 270
+           L 270 270
+           L 270 220
+           L 390 220
+           L 390 330
+           C 360 380, 312 408, 256 408
+           Z"
+        fill="none"
+        stroke="#00ff41"
+        stroke-width="4"
+        opacity="0.6"/>
+</svg>
