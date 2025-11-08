@@ -1,35 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArrowRight, Zap, Database, FileText, Users, Globe, Shield } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
 
 const LandingPage = () => {
-  const [terminalText, setTerminalText] = useState('');
-  const [showCursor, setShowCursor] = useState(true);
-
-  const fullText = '> initialising DOCU-FORGE...';
-
-  useEffect(() => {
-    let index = 0;
-    const typingInterval = setInterval(() => {
-      if (index < fullText.length) {
-        setTerminalText(fullText.slice(0, index + 1));
-        index++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 80);
-
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 530);
-
-    return () => {
-      clearInterval(typingInterval);
-      clearInterval(cursorInterval);
-    };
-  }, []);
-
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -40,10 +14,16 @@ const LandingPage = () => {
       <header className="header">
         <div className="container">
           <div className="header-content">
-            <div className="logo">
-              <span className="logo-bracket">[</span>
-              DOCU-FORGE
-              <span className="logo-bracket">]</span>
+            <div>
+              <div className="logo">
+                <span className="logo-bracket">[</span>
+                GIZMET-DEV
+                <span className="logo-bracket">]</span>
+              </div>
+              <div className="patent-badge-header">
+                <span className="patent-icon">◆</span>
+                <span className="patent-text">PATENT PENDING</span>
+              </div>
             </div>
           </div>
         </div>
@@ -54,22 +34,12 @@ const LandingPage = () => {
         <div className="hero-grid-bg"></div>
         <div className="container">
           <div className="hero-content">
-            <div className="terminal-line">
-              {terminalText}
-              {showCursor && <span className="cursor">_</span>}
-            </div>
             <h1 className="hero-title">
               Documentary Development<br />
               <span className="gradient-text">At Machine Speed</span>
             </h1>
-            <div className="patent-badge">
-              <span className="patent-icon">◆</span>
-              <span className="patent-text">PATENT PENDING</span>
-            </div>
             <p className="hero-subtitle">
               What takes traditional teams 4-7 months, delivered in 48 hours.
-              Research → Structure → Treatment → Production → Pitch.
-              <span className="highlight-text"> Single operator. Full package.</span>
             </p>
             <div className="hero-stats">
               <div className="stat">
@@ -87,7 +57,7 @@ const LandingPage = () => {
             </div>
             <div className="hero-cta">
               <Button onClick={scrollToContact} className="cta-button">
-                <span>Schedule Consultation</span>
+                <span>Request Access</span>
                 <ArrowRight className="button-icon" />
               </Button>
             </div>

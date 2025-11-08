@@ -72,6 +72,23 @@ code, .terminal-line, .logo, .section-label {
   opacity: 0.6;
 }
 
+.patent-badge-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  opacity: 0.6;
+}
+
+.patent-badge-header .patent-icon {
+  font-size: 0.5rem;
+}
+
+.patent-badge-header .patent-text {
+  font-size: 0.5rem;
+  letter-spacing: 0.08em;
+}
+
 .nav {
   display: flex;
   gap: 2rem;
@@ -166,53 +183,22 @@ code, .terminal-line, .logo, .section-label {
   }
 }
 
-.terminal-line {
-  font-size: 0.875rem;
-  color: var(--green-primary);
-  margin-bottom: 2rem;
-  opacity: 0.8;
-}
-
-.cursor {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
 .hero-title {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #ffffff;
   letter-spacing: -0.02em;
 }
 
-.patent-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(0, 255, 65, 0.1);
-  border: 1px solid rgba(0, 255, 65, 0.3);
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
-  backdrop-filter: blur(10px);
-}
-
 .patent-icon {
   color: var(--green-primary);
-  font-size: 0.75rem;
 }
 
 .patent-text {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
   color: var(--green-primary);
-  letter-spacing: 0.1em;
   font-weight: 600;
 }
 
@@ -840,7 +826,7 @@ code, .terminal-line, .logo, .section-label {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 1.25rem;
   }
 
   .header {
@@ -848,7 +834,15 @@ code, .terminal-line, .logo, .section-label {
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: 0.9375rem;
+  }
+
+  .patent-badge-header {
+    margin-top: 0.25rem;
+  }
+
+  .patent-badge-header .patent-text {
+    font-size: 0.4375rem;
   }
 
   .nav {
@@ -861,42 +855,33 @@ code, .terminal-line, .logo, .section-label {
   }
 
   .hero-title {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .terminal-line {
-    font-size: 0.75rem;
+    font-size: 2.25rem;
+    line-height: 1.15;
     margin-bottom: 1.5rem;
   }
 
-  .patent-badge {
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .patent-text {
-    font-size: 0.625rem;
+  .hero-subtitle {
+    font-size: 1.0625rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
   }
 
   .hero-stats {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    margin-bottom: 2.5rem;
   }
 
   .stat-number {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 20px var(--green-glow);
   }
 
   .stat-label {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
+    opacity: 0.9;
   }
 
   .hero-cta {
@@ -995,19 +980,26 @@ code, .terminal-line, .logo, .section-label {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.875rem;
+    padding: 0 1rem;
   }
 
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-subtitle {
-    font-size: 0.9375rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-stats {
+    gap: 2.5rem;
+    padding: 2rem 0;
   }
 
   .stat-number {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
   }
 
   .section-title {
