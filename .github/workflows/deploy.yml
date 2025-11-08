@@ -38,9 +38,13 @@ jobs:
         run: yarn build
         env:
           CI: false
+          NODE_OPTIONS: --max_old_space_size=4096
 
       - name: Copy CNAME to build
-        run: cp CNAME frontend/build/CNAME
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME frontend/build/CNAME
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
