@@ -850,60 +850,255 @@ code, .terminal-line, .logo, .section-label {
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
   .hero .container {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
+  .hero-visual {
+    order: -1;
+  }
+
   .capabilities-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
-  
+
   .split-content,
   .cta-content {
     grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .problem-solution,
+  .capabilities,
+  .use-cases,
+  .specifications,
+  .cta-section {
+    padding: 5rem 0;
   }
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    padding: 1rem 0;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
   .nav {
     gap: 1rem;
   }
-  
-  .hero-title {
-    font-size: 2.5rem;
+
+  .hero {
+    padding-top: 80px;
+    min-height: auto;
   }
-  
+
+  .hero .container {
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .terminal-line {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .patent-badge {
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .patent-text {
+    font-size: 0.625rem;
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
   }
-  
-  .capabilities-grid,
-  .use-cases-grid {
-    grid-template-columns: 1fr;
+
+  .stat-number {
+    font-size: 2rem;
   }
-  
+
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+
   .hero-cta {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .cta-button,
   .secondary-button {
     width: 100%;
     justify-content: center;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
   }
-  
+
+  .hero-visual {
+    margin: 0 -1rem;
+  }
+
+  .visual-container {
+    border-radius: 0;
+  }
+
+  .problem-solution,
+  .capabilities,
+  .use-cases,
+  .specifications,
+  .cta-section {
+    padding: 4rem 0;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .capabilities-grid,
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .capability-card,
+  .use-case-card {
+    padding: 1.5rem;
+  }
+
+  .card-title,
+  .use-case-title {
+    font-size: 1.125rem;
+  }
+
+  .card-description,
+  .use-case-description {
+    font-size: 0.875rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-box {
+    padding: 2rem;
+  }
+
+  .cta-email {
+    font-size: 1.125rem;
+    word-break: break-word;
+  }
+
   .footer-content {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
   }
-  
+
   .footer-right {
     text-align: center;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.875rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-email {
+    font-size: 1rem;
+  }
+
+  .cta-box {
+    padding: 1.5rem;
+  }
+
+  .problem-item,
+  .solution-item {
+    font-size: 0.9375rem;
+    gap: 0.75rem;
+  }
+
+  .problem-icon,
+  .solution-icon {
+    font-size: 1.25rem;
   }
 }
