@@ -792,13 +792,21 @@ code, .terminal-line, .logo, .section-label {
   font-family: 'JetBrains Mono', monospace;
 }
 
+.footer-copyright {
+  font-size: 0.75rem;
+  color: var(--gray-text);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
 .footer-patent {
   font-size: 0.75rem;
   color: var(--green-primary);
   font-family: 'JetBrains Mono', monospace;
-  margin-top: 0.5rem;
-  letter-spacing: 0.1em;
-  opacity: 0.8;
+  margin-top: 0.25rem;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
 }
 
 .footer-right {
