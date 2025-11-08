@@ -766,6 +766,26 @@ code, .terminal-line, .logo, .section-label {
   border-top: 1px solid var(--gray-border);
 }
 
+/* Social Proof Section */
+.social-proof {
+  padding: 3rem 0;
+  background: var(--black);
+  border-top: 1px solid var(--gray-border);
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.social-proof-content {
+  text-align: center;
+}
+
+.social-proof-text {
+  font-size: 0.875rem;
+  color: var(--gray-text);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
 /* Footer */
 .footer {
   padding: 3rem 0;
@@ -807,6 +827,15 @@ code, .terminal-line, .logo, .section-label {
   margin-top: 0.25rem;
   letter-spacing: 0.05em;
   opacity: 0.9;
+}
+
+.footer-product {
+  font-size: 0.75rem;
+  color: var(--gray-text);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
 }
 
 .footer-right {

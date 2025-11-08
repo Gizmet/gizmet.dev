@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Zap, Database, FileText, Users, Globe, Clock, Shield, ChevronDown } from 'lucide-react';
+import { ArrowRight, Zap, Database, FileText, Users, Globe, Shield } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 
 const LandingPage = () => {
   const [terminalText, setTerminalText] = useState('');
@@ -46,11 +45,6 @@ const LandingPage = () => {
               DOCU-FORGE
               <span className="logo-bracket">]</span>
             </div>
-            <nav className="nav">
-              <a href="#capabilities" className="nav-link">capabilities</a>
-              <a href="#use-cases" className="nav-link">use_cases</a>
-              <a href="#contact" className="nav-link">contact</a>
-            </nav>
           </div>
         </div>
       </header>
@@ -93,13 +87,9 @@ const LandingPage = () => {
             </div>
             <div className="hero-cta">
               <Button onClick={scrollToContact} className="cta-button">
-                <span>Request Access</span>
+                <span>Schedule Consultation</span>
                 <ArrowRight className="button-icon" />
               </Button>
-              <button className="secondary-button" onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })}>
-                <span>Explore Capabilities</span>
-                <ChevronDown className="button-icon" />
-              </button>
             </div>
           </div>
           <div className="hero-visual">
@@ -168,7 +158,7 @@ const LandingPage = () => {
       </section>
 
       {/* Capabilities Section */}
-      <section id="capabilities" className="capabilities">
+      <section className="capabilities">
         <div className="container">
           <div className="section-header">
             <div className="section-label">[capabilities]</div>
@@ -242,153 +232,12 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Visual Break */}
-      <section className="visual-break">
-        <div className="visual-break-content">
-          <img 
-            src="https://images.unsplash.com/photo-1705107958696-a7f73c749ab3?w=1200&q=80" 
-            alt="Production" 
-            className="break-image"
-          />
-          <div className="break-overlay">
-            <div className="container">
-              <div className="break-text">
-                <div className="section-label">[transformation]</div>
-                <h2 className="break-title">48 Hours vs 5 Months<br />Single Operator vs Full Teams</h2>
-                <p className="break-description">
-                  880 hours of traditional development compressed into 48. Not through shortcuts - through veteran expertise amplified by precision systems. 18x faster. 55x more efficient.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Use Cases Section */}
-      <section id="use-cases" className="use-cases">
+      {/* Social Proof Section */}
+      <section className="social-proof">
         <div className="container">
-          <div className="section-header">
-            <div className="section-label">[use_cases]</div>
-            <h2 className="section-title">How Producers Use This</h2>
+          <div className="social-proof-content">
+            <p className="social-proof-text">Developed in partnership with UK broadcast veterans</p>
           </div>
-
-          <div className="use-cases-grid">
-            <Card className="use-case-card">
-              <div className="use-case-number">01</div>
-              <h3 className="use-case-title">Portfolio Approach</h3>
-              <p className="use-case-description">
-                Develop 5 complete packages simultaneously. Pitch all. Greenlight the best. Zero wasted development cost on projects that don't sell.
-              </p>
-            </Card>
-
-            <Card className="use-case-card">
-              <div className="use-case-number">02</div>
-              <h3 className="use-case-title">Rapid Response</h3>
-              <p className="use-case-description">
-                Breaking case hits the news. Complete development package ready in days. First to commissioners with fully developed pitch.
-              </p>
-            </Card>
-
-            <Card className="use-case-card">
-              <div className="use-case-number">03</div>
-              <h3 className="use-case-title">International Expansion</h3>
-              <p className="use-case-description">
-                UK producer researching US cases. Australian stories for British broadcasters. Global research without geographic limits.
-              </p>
-            </Card>
-
-            <Card className="use-case-card">
-              <div className="use-case-number">04</div>
-              <h3 className="use-case-title">Format Flexibility</h3>
-              <p className="use-case-description">
-                Same case, multiple formats. Feature for theatrical. Series for streaming. Podcast adaptation. All developed in parallel.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Specifications Section */}
-      <section className="specifications">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-label">[specifications]</div>
-            <h2 className="section-title">System Capabilities</h2>
-          </div>
-
-          <Accordion type="single" collapsible className="specs-accordion">
-            <AccordionItem value="research">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <Clock className="trigger-icon" />
-                  <span>Research & Discovery</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Find viable cases globally. Deep research across court records, legal databases, news archives. Complete timeline construction. Key people profiling. Archive mapping. Blindspot analysis. Competition research. UK, US, Canada, Australia, Europe coverage.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="structure">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <Zap className="trigger-icon" />
-                  <span>Story Architecture</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Unique narrative positioning. Beat-by-beat structural blueprint. Emotional arc mapping. Timeline design. Tonal calibration. Act breaks and climactic moments. Visual and audio strategy. Adaptable to feature, series, or podcast formats.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="treatment">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <FileText className="trigger-icon" />
-                  <span>Narrative Treatment</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Complete cinematic prose treatment. Present-tense documentary screenplay. New Yorker / This American Life standard. Consistent tonal execution. Documented quotes only. Production notes integrated. Commissioners can read the complete vision.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="production">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <Globe className="trigger-icon" />
-                  <span>Production Planning</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Filming locations mapped with access strategies. Interview subjects prioritized. Legal risk assessment. Archive licensing roadmap. Production timeline. Crew requirements. Risk mitigation. Budget considerations. International production support.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="interviews">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <Users className="trigger-icon" />
-                  <span>Interview Preparation</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Comprehensive question banks for all subjects. Trauma-informed protocols. Blindspot questions. Session structure. Ethical guidelines. Vulnerability assessment. Every key person mapped and ready.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="delivery">
-              <AccordionTrigger className="accordion-trigger">
-                <div className="trigger-content">
-                  <Shield className="trigger-icon" />
-                  <span>Delivery & Export</span>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="accordion-content">
-                <p>Development Brief. Production Roadmap. Assets Database. Interview Strategies. Pitch Materials. Professional Word document export. Multiple formats optimized for different audiences. Commissioner-ready. Funding application-ready.</p>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
         </div>
       </section>
 
@@ -400,7 +249,7 @@ const LandingPage = () => {
               <div className="section-label">[access]</div>
               <h2 className="cta-title">Ready To Transform<br />Your Development Process?</h2>
               <p className="cta-description">
-                DOCU-FORGE is operational and production-tested. System access requires authorization.
+                DOCU-FORGE is operational and production-tested. System access requires authorization. All work is confidential and NDA-protected.
               </p>
             </div>
             <div className="cta-action">
@@ -431,6 +280,7 @@ const LandingPage = () => {
               <p className="footer-tagline">by GIZMET.DEV [creative systems lab]</p>
               <p className="footer-copyright">© 2025 Gizmet.dev / Michael Needs</p>
               <p className="footer-patent">Patent Pending (UK Patent Application GB2518692.5)</p>
+              <p className="footer-product">DOCU-FORGE is a Gizmet.dev Ltd product</p>
             </div>
             <div className="footer-right">
               <p className="footer-text">Integrated infrastructure for high-trust creative work.</p>
