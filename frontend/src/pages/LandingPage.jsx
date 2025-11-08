@@ -92,16 +92,6 @@ const LandingPage = () => {
               </Button>
             </div>
           </div>
-          <div className="hero-visual">
-            <div className="visual-container">
-              <img 
-                src="https://images.unsplash.com/photo-1572018098513-8c5fa9a254cc?w=800&q=80" 
-                alt="Studio" 
-                className="hero-image"
-              />
-              <div className="image-overlay"></div>
-            </div>
-          </div>
         </div>
       </section>
 
