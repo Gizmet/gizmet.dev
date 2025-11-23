@@ -30,8 +30,8 @@
              L 390 330
              C 360 380, 312 408, 256 408
              Z"
-          fill="#00ff41"
-          stroke="#00ff41"
+          fill="#f5a623"
+          stroke="#f5a623"
           stroke-width="6"/>
   </g>
 
@@ -53,7 +53,7 @@
            C 360 380, 312 408, 256 408
            Z"
         fill="none"
-        stroke="#00ff41"
+        stroke="#f5a623"
         stroke-width="4"
         opacity="0.6"/>
 </svg>
