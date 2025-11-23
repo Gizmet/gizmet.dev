@@ -544,6 +544,9 @@ body {
   .owl-mobile .owl-glow {
     width: 300%;
     height: 300%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -557,23 +560,26 @@ body {
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 3.5rem);
-    margin-bottom: 0.5rem;
+    font-size: clamp(3rem, 12vw, 4rem);
+    margin-bottom: 0;
   }
 
   .owl-mobile {
-    margin: 1rem 0;
+    margin: 0;
   }
 
   .owl-mobile .geometric-owl {
-    max-width: 140px;
-    max-height: 180px;
+    max-width: 200px;
+    max-height: 250px;
     overflow: visible;
   }
 
   .owl-mobile .owl-glow {
     width: 350%;
     height: 350%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .hero-tagline {
@@ -604,12 +610,17 @@ body {
   }
 
   .hero-title {
-    font-size: 2.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+
+  .owl-mobile .geometric-owl {
+    max-width: 170px;
+    max-height: 210px;
   }
 
   .hero-tagline {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-bottom: 0.8rem;
   }
 
@@ -623,18 +634,15 @@ body {
   }
 
   .owl-mobile {
-    margin: 0.8rem 0;
-  }
-
-  .owl-mobile .geometric-owl {
-    max-width: 120px;
-    max-height: 150px;
-    overflow: visible;
+    margin: 0;
   }
 
   .owl-mobile .owl-glow {
     width: 400%;
     height: 400%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .hero-patent {
