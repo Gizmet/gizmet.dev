@@ -1,19 +1,8 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import { Toaster } from "./components/ui/sonner";
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Toaster position="top-right" />
-    </div>
-  );
+  return <LandingPage />;
 }
 
 export default App;
