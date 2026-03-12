@@ -144,7 +144,7 @@ const LandingPage = () => {
         <div className="hero-bg-grid" ref={heroGridRef}></div>
         <div className="hero-glow"></div>
         <div className="hero-content">
-          <h1 className="hero-h1">Research at machine<br /><em>speed.</em></h1>
+          <h1 className="hero-h1">Research <span style={{ whiteSpace: 'nowrap' }}>at machine</span><br /><em>speed.</em></h1>
           <p className="hero-kicker">Gizmet Dev Ltd &nbsp;&middot;&nbsp; United Kingdom</p>
         </div>
         <div className="hero-bottom">
