@@ -1134,7 +1134,7 @@ nav {
     font-size: 9px;
   }
   .hero-h1 {
-    font-size: clamp(42px, 12vw, 64px);
+    font-size: clamp(38px, 10.5vw, 58px);
     line-height: 0.92;
     margin-bottom: 16px;
   }
