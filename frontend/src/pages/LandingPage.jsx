@@ -118,7 +118,7 @@ const LandingPage = () => {
         <div className="nav-right">
           <ul className="nav-links">
             <li><a href="#systems" onClick={(e) => scrollTo(e, 'systems')}>Systems</a></li>
-            <li><a href="#method" onClick={(e) => scrollTo(e, 'method')}>Method</a></li>
+            <li><a href="#method" onClick={(e) => scrollTo(e, 'method')}>Principles</a></li>
             <li><a href="#about" onClick={(e) => scrollTo(e, 'about')}>About</a></li>
             <li><a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer">GIZINT ↗</a></li>
           </ul>
@@ -132,7 +132,7 @@ const LandingPage = () => {
       {/* MOBILE MENU */}
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
         <a href="#systems" onClick={(e) => scrollTo(e, 'systems')}>Systems</a>
-        <a href="#method" onClick={(e) => scrollTo(e, 'method')}>Method</a>
+        <a href="#method" onClick={(e) => scrollTo(e, 'method')}>Principles</a>
         <a href="#about" onClick={(e) => scrollTo(e, 'about')}>About</a>
         <a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer">GIZINT ↗</a>
         <a href="mailto:hello@gizmet.dev" style={{ color: 'var(--amber)' }}>Enquire</a>
@@ -180,7 +180,7 @@ const LandingPage = () => {
       <section className="section systems" id="systems">
         <div className="s-label reveal">01 — Systems</div>
         <div className="systems-intro">
-          <h2 className="reveal">Three systems.<br />Operational now.</h2>
+          <h2 className="reveal">Three systems.<br />Operational.</h2>
           <p className="reveal reveal-stagger" style={{ '--delay': '100ms' }}>Each system was built to solve a specific problem that existing tools could not. They run continuously, they are used on live client work, and they are not available off the shelf. Enquiries about access are handled directly by the director.</p>
         </div>
         <div className="systems-grid">
@@ -217,29 +217,24 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* METHOD */}
+      {/* PRINCIPLES */}
       <section className="section method" id="method">
-        <div className="s-label reveal">02 — Method</div>
+        <div className="s-label reveal">02 — Principles</div>
         <div className="method-grid">
           <div className="method-card reveal reveal-stagger" style={{ '--delay': '0ms' }}>
             <div className="method-num">01</div>
-            <h3 className="method-title">No editorial line</h3>
-            <p className="method-body">We do not advocate for outcomes. We assess conditions. Every output is structured to present the picture as it is — not as any party would prefer it to be. Clients form their own judgments.</p>
+            <h3 className="method-title">Proprietary infrastructure</h3>
+            <p className="method-body">Every system runs on architecture built internally. No third-party platforms in the critical path. No dependencies that can be withdrawn, repriced, or compromised.</p>
           </div>
           <div className="method-card reveal reveal-stagger" style={{ '--delay': '100ms' }}>
             <div className="method-num">02</div>
-            <h3 className="method-title">Sourced or not stated</h3>
-            <p className="method-body">Every claim carries a citation. Analytical judgments are graded by confidence level and clearly separated from reported fact. Precision in language is structural, not stylistic.</p>
+            <h3 className="method-title">Practitioner-designed</h3>
+            <p className="method-body">These systems were built by someone who uses them on live work. The design decisions reflect operational requirements, not commercial abstractions.</p>
           </div>
           <div className="method-card reveal reveal-stagger" style={{ '--delay': '200ms' }}>
             <div className="method-num">03</div>
-            <h3 className="method-title">Human-directed throughout</h3>
-            <p className="method-body">Collection and synthesis is system-assisted. All analytical judgments are human-directed. The distinction is maintained without exception — in every output, for every client.</p>
-          </div>
-          <div className="method-card reveal reveal-stagger" style={{ '--delay': '300ms' }}>
-            <div className="method-num">04</div>
-            <h3 className="method-title">Errors corrected publicly</h3>
-            <p className="method-body">When assessments are wrong — and they sometimes are — corrections appear in the next output under the author's name, with the reasoning explained. The correction record is permanent.</p>
+            <h3 className="method-title">Built to outlast the work</h3>
+            <p className="method-body">Systems are designed for sustained operation across long-duration projects. Architecture decisions optimise for durability, not demonstration.</p>
           </div>
         </div>
       </section>
