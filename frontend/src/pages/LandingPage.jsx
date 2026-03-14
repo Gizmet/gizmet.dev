@@ -120,7 +120,7 @@ const LandingPage = () => {
             <li><a href="#systems" onClick={(e) => scrollTo(e, 'systems')}>Systems</a></li>
             <li><a href="#method" onClick={(e) => scrollTo(e, 'method')}>Principles</a></li>
             <li><a href="#about" onClick={(e) => scrollTo(e, 'about')}>About</a></li>
-            <li><a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer">GIZINT ↗</a></li>
+            <li><a href="https://brief.gizmet.dev" target="_blank" rel="noopener noreferrer">GIZINT ↗</a></li>
           </ul>
           <a href="mailto:hello@gizmet.dev" className="nav-contact">Enquire</a>
           <button className={`hamburger${menuOpen ? ' active' : ''}`} onClick={toggleMenu} aria-label="Menu">
@@ -134,7 +134,7 @@ const LandingPage = () => {
         <a href="#systems" onClick={(e) => scrollTo(e, 'systems')}>Systems</a>
         <a href="#method" onClick={(e) => scrollTo(e, 'method')}>Principles</a>
         <a href="#about" onClick={(e) => scrollTo(e, 'about')}>About</a>
-        <a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer">GIZINT ↗</a>
+        <a href="https://brief.gizmet.dev" target="_blank" rel="noopener noreferrer">GIZINT ↗</a>
         <a href="mailto:hello@gizmet.dev" style={{ color: 'var(--amber)' }}>Enquire</a>
       </div>
 
@@ -212,7 +212,7 @@ const LandingPage = () => {
             <div className="sys-codename">NIGHTJAR</div>
             <div className="sys-function">Geopolitical Analysis</div>
             <p className="sys-desc">The engine behind GIZINT. Delivers assessed intelligence daily to subscribers who operate under uncertainty and need the full picture before they act. Human-directed at every stage.</p>
-            <div className="sys-footer">Powers GIZINT &nbsp;&middot;&nbsp; gizint.ghost.io</div>
+            <div className="sys-footer">Powers GIZINT &nbsp;&middot;&nbsp; brief.gizmet.dev</div>
           </div>
         </div>
       </section>
@@ -287,7 +287,7 @@ const LandingPage = () => {
             <p className="reveal" style={{ '--delay': '80ms' }}>GIZINT publishes daily. Geopolitics, defence, markets, security — assessed to a consistent standard, delivered before the day opens. No editorial line. No advocacy.</p>
             <p className="reveal" style={{ '--delay': '160ms' }}>Written for people who operate under uncertainty. Not for a general audience.</p>
             <div className="reveal" style={{ '--delay': '240ms' }}>
-              <a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer" className="btn-a">Read GIZINT →</a>
+              <a href="https://brief.gizmet.dev" target="_blank" rel="noopener noreferrer" className="btn-a">Read GIZINT →</a>
             </div>
           </div>
           <div className="brief-mock reveal" style={{ '--delay': '200ms' }}>
@@ -341,7 +341,7 @@ const LandingPage = () => {
         </div>
         <div className="footer-links">
           <a href="mailto:hello@gizmet.dev">Contact</a>
-          <a href="https://gizint.ghost.io" target="_blank" rel="noopener noreferrer">GIZINT</a>
+          <a href="https://brief.gizmet.dev" target="_blank" rel="noopener noreferrer">GIZINT</a>
           <a href="mailto:subscriptions@gizmet.dev">Subscriptions</a>
         </div>
         <span className="footer-mark">No editorial line. No advocacy.</span>
