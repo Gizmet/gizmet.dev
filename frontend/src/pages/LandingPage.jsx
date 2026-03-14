@@ -6,6 +6,7 @@ const owlSrc = `${process.env.PUBLIC_URL}/owl-logo.png`;
 // Fallback preview data in case the API is unreachable
 const FALLBACK_PREVIEW = {
   issue: '005', date: '14 MAR 2026', slug: 'issue-005',
+  bottomLine: 'Day 14: The Iran campaign has no identifiable ceasefire mechanism and is escalating.',
   entries: [
     { region: 'Iran · Day 14', head: 'Highest-volume strikes as three Iranian leadership signals contradict within hours', body: 'We assess — no identifiable interlocutor for ceasefire negotiations.' },
     { region: 'Cross-Theatre', head: 'Iran campaign reshaping Ukraine — Russia gains revenue, loses territory', body: 'Reporting indicates — OFAC waiver hands Moscow revenue without reciprocal commitment.' }
@@ -328,6 +329,9 @@ const LandingPage = () => {
                 </span>
                 <span className="brief-date">{briefPreview.date}</span>
               </div>
+              {briefPreview.bottomLine && (
+                <div className="brief-bottom-line">{briefPreview.bottomLine}</div>
+              )}
               <div className="brief-entries">
                 {briefPreview.entries.map((entry, i) => (
                   <div className="brief-entry" key={i}>
