@@ -3,13 +3,42 @@ import HeroGlobe from '../components/HeroGlobe';
 
 const owlSrc = `${process.env.PUBLIC_URL}/owl-logo.png`;
 
+// Fallback preview data in case the API is unreachable
+const FALLBACK_PREVIEW = {
+  issue: '005', date: '14 MAR 2026', slug: 'issue-005',
+  entries: [
+    { region: 'Iran · Day 14', head: 'Highest-volume strikes as three Iranian leadership signals contradict within hours', body: 'We assess — no identifiable interlocutor for ceasefire negotiations.' },
+    { region: 'Cross-Theatre', head: 'Iran campaign reshaping Ukraine — Russia gains revenue, loses territory', body: 'Reporting indicates — OFAC waiver hands Moscow revenue without reciprocal commitment.' }
+  ]
+};
+
+const GHOST_CONTENT_KEY = 'd1624aaec3349affd0b5869677';
+const GHOST_API = 'https://gizint.ghost.io/ghost/api/content';
+
 const LandingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [briefPreview, setBriefPreview] = useState(FALLBACK_PREVIEW);
   const loaderRef = useRef(null);
   const progressRef = useRef(null);
   const heroGridRef = useRef(null);
   const navRef = useRef(null);
   const lastScrollRef = useRef(0);
+
+  // Fetch live preview data from Ghost
+  useEffect(() => {
+    fetch(`${GHOST_API}/pages/slug/brief-preview/?key=${GHOST_CONTENT_KEY}&fields=html`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.pages && data.pages[0] && data.pages[0].html) {
+          const raw = data.pages[0].html.replace(/<\/?p>/g, '');
+          const parsed = JSON.parse(raw);
+          if (parsed.entries && parsed.entries.length > 0) {
+            setBriefPreview(parsed);
+          }
+        }
+      })
+      .catch(() => {}); // Silent fail — fallback data is already set
+  }, []);
 
   // Loader dismiss — wait for minimum animation time AND globe readiness
   useEffect(() => {
@@ -290,36 +319,30 @@ const LandingPage = () => {
               <a href="https://brief.gizmet.dev" target="_blank" rel="noopener noreferrer" className="btn-a">Read GIZINT →</a>
             </div>
           </div>
-          <div className="brief-mock reveal" style={{ '--delay': '200ms' }}>
-            <div className="brief-top">
-              <span className="brief-title-tag">
-                <span className="brief-live-dot"></span>
-                GIZINT — Daily Brief
-              </span>
-              <span className="brief-date">12 Mar 2026</span>
-            </div>
-            <div className="brief-entries">
-              <div className="brief-entry">
-                <div className="brief-entry-region">■ Iran · US</div>
-                <div className="brief-entry-head">US assessment contradicts administration posture on regime stability</div>
-                <div className="brief-entry-body"><em>We assess</em> — four incompatible endgame timelines now active simultaneously across principal decision-makers.</div>
+          <a href={`https://brief.gizmet.dev/${briefPreview.slug}/`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+            <div className="brief-mock reveal" style={{ '--delay': '200ms' }}>
+              <div className="brief-top">
+                <span className="brief-title-tag">
+                  <span className="brief-live-dot"></span>
+                  GIZINT — Issue {briefPreview.issue}
+                </span>
+                <span className="brief-date">{briefPreview.date}</span>
               </div>
-              <div className="brief-entry">
-                <div className="brief-entry-region">■ Naval · MCM</div>
-                <div className="brief-entry-head">Sole RN mine-hunter offline for maintenance</div>
-                <div className="brief-entry-body"><em>Reporting indicates</em> — coalition mine countermeasures capability below yesterday's assessment. Gap is structural, not temporary.</div>
+              <div className="brief-entries">
+                {briefPreview.entries.map((entry, i) => (
+                  <div className="brief-entry" key={i}>
+                    <div className="brief-entry-region">{'\u25A0'} {entry.region}</div>
+                    <div className="brief-entry-head">{entry.head}</div>
+                    <div className="brief-entry-body">{entry.body}</div>
+                  </div>
+                ))}
               </div>
-              <div className="brief-entry">
-                <div className="brief-entry-region">■ Diplomatic</div>
-                <div className="brief-entry-head">Gulf–Pakistan backchannel confirmed at principal level</div>
-                <div className="brief-entry-body"><em>Available reporting suggests</em> — most concrete off-ramp signal to date. Riyadh track now active.</div>
+              <div className="brief-footer">
+                <span>No editorial line</span>
+                <span>Assessment only</span>
               </div>
             </div>
-            <div className="brief-footer">
-              <span>No editorial line</span>
-              <span>Assessment only</span>
-            </div>
-          </div>
+          </a>
         </div>
       </section>
 
