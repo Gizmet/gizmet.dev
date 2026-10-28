@@ -1,0 +1,43 @@
+/* Forgotten Ground: direct manipulation and photographic presentation. */
+.fg-section{--fg-gap:clamp(18px,2vw,32px);--fg-size:clamp(350px,34vw,640px);padding-top:clamp(34px,3.6vw,58px);padding-bottom:clamp(32px,3.2vw,48px)}
+.fg-intro{padding-bottom:clamp(30px,3.3vw,52px)}
+.fg-intro h3{font-size:clamp(54px,5.8vw,92px)}
+.fg-intro-copy p{font-size:clamp(17px,1.42vw,21px)}
+.fg-gallery-top{padding-bottom:15px}
+.fg-viewport{position:relative;overflow-x:auto;scroll-snap-type:x proximity;touch-action:auto;isolation:isolate}
+.fg-viewport.is-enhanced{overflow:hidden;overflow:clip;scroll-snap-type:none;touch-action:pan-y;cursor:grab}
+.fg-viewport.is-enhanced.is-dragging{cursor:grabbing}
+.fg-viewport.is-enhanced .fg-track{will-change:transform;padding-right:var(--fg-tail,0px)}
+.fg-track{position:relative}
+.fg-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:3;pointer-events:none}
+.fg-photo img{transform:none;object-fit:contain}
+.fg-webgl .fg-photo img{opacity:0}
+.fg-card figcaption{min-height:43px}
+.fg-viewport.is-enhanced .fg-photo{cursor:grab}
+.fg-viewport.is-enhanced.is-dragging .fg-photo{cursor:grabbing}
+.fg-viewport.is-enhanced .fg-photo,.fg-viewport.is-enhanced .fg-photo img{-webkit-user-drag:none;user-select:none}
+.fg-control{transition:background-color .2s,color .2s,border-color .2s}
+.fg-lightbox{position:fixed;inset:0;margin:0;width:100vw;max-width:none;height:100dvh;max-height:none;padding:0;overflow:hidden;border:0;background:transparent;color:var(--paper)}
+.fg-lightbox[open]{display:block}
+.fg-lightbox::backdrop{background:transparent}
+.fg-lightbox-scrim{position:fixed;inset:0;background:#11120f;opacity:0;z-index:0}
+.fg-lightbox>img,.fg-lightbox-ghost{position:fixed;display:block;max-width:none;max-height:none;min-height:0;object-fit:contain;z-index:1;box-shadow:0 12px 50px #0005}
+.fg-lightbox-top,.fg-lightbox-bottom{position:fixed;left:clamp(15px,2vw,30px);right:clamp(15px,2vw,30px);z-index:2;transition:opacity .2s ease;pointer-events:auto}
+.fg-lightbox-top{top:clamp(15px,2vw,30px)}
+.fg-lightbox-bottom{bottom:clamp(15px,2vw,30px)}
+.fg-lightbox.is-transitioning .fg-lightbox-top,.fg-lightbox.is-transitioning .fg-lightbox-bottom{opacity:0;pointer-events:none}
+.fg-lightbox button:disabled{opacity:.35;cursor:default}
+.fg-lightbox button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+@media(max-width:700px){
+  .fg-section{--fg-size:min(80vw,390px);--fg-gap:15px;padding-top:33px}
+  .fg-intro h3{font-size:clamp(48px,12vw,76px)}
+  .fg-gallery-top{padding-bottom:13px}
+  .fg-card figcaption{min-height:42px}
+  .fg-lightbox-top,.fg-lightbox-bottom{left:16px;right:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .fg-viewport{scroll-behavior:auto!important}
+  .fg-viewport .fg-track{will-change:auto}
+  .fg-photo img{transform:none!important}
+  .fg-control,.fg-lightbox-top,.fg-lightbox-bottom{transition:none!important}
+}

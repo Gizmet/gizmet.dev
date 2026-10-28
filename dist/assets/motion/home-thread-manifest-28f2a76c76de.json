@@ -1,0 +1,48 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "transitionFrames": 10,
+  "closingHoldFrames": 12,
+  "shots": [
+    {
+      "id": "imposter",
+      "source": "productions/imposter-episode-1-still-004.webp",
+      "publicFile": "imposter.webp",
+      "title": "Imposter",
+      "role": "Investigation · Camera · Lighting",
+      "stableFrames": 48,
+      "motionFrames": 54,
+      "scaleStart": 1.095,
+      "scaleEnd": 1.145,
+      "frameHeight": 1080,
+      "creditPosition": "standard"
+    },
+    {
+      "id": "valleys",
+      "source": "photography/murder-in-the-valleys/michael-james-records-room.png",
+      "publicFile": "records.png",
+      "title": "Murder in the Valleys",
+      "role": "Official production stills",
+      "stableFrames": 42,
+      "motionFrames": 58,
+      "scaleStart": 1.02,
+      "scaleEnd": 1.04,
+      "frameHeight": 854,
+      "creditPosition": "standard"
+    },
+    {
+      "id": "real-hack",
+      "source": "productions/the-real-hack-tx-poster.png",
+      "publicFile": "hack.png",
+      "title": "The Real Hack",
+      "role": "TX poster design",
+      "stableFrames": 48,
+      "motionFrames": 58,
+      "scaleStart": 1.13,
+      "scaleEnd": 1.035,
+      "frameHeight": 1080,
+      "creditPosition": "low"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/* Explicit crop frames keep source margins outside the visible photograph. */
+.photography-page .visual-work-note a{text-decoration:underline;text-underline-offset:3px}
+.photography-page .visual-work-item .image-crop-orange,
+.photography-page .visual-work-item .image-crop-night,
+.photography-page .visual-work-item .image-crop-motorcycle{display:block;position:relative;overflow:hidden;isolation:isolate;width:100%}
+.photography-page .visual-work-item .image-crop-orange,
+.photography-page .visual-work-item .image-crop-night{aspect-ratio:40/17}
+.photography-page .visual-work-item .image-crop-motorcycle{aspect-ratio:1993/1878.016}
+.photography-page .visual-work-item .image-crop-orange>img,
+.photography-page .visual-work-item .image-crop-night>img,
+.photography-page .visual-work-item .image-crop-motorcycle>img{position:absolute;top:0;left:0;display:block;width:100%;height:auto;max-width:none;max-height:none;object-fit:fill}
+.photography-page .visual-work-item .image-crop-orange>img,
+.photography-page .visual-work-item .image-crop-night>img{transform:translateY(-28.75%)}
+.photography-page .supporting-photo-pair{grid-template-columns:1fr 2.2fr;align-items:start}
+@media(max-width:700px){.photography-page .supporting-photo-pair{grid-template-columns:1fr}}

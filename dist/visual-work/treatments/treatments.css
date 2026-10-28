@@ -1,0 +1,4 @@
+.treatment-demo-link{display:flex;align-items:center;justify-content:space-between;gap:20px;width:min(100%,560px);margin:25px 0 0;padding:17px 20px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:700;transition:background .2s,color .2s}
+.treatment-demo-link:hover,.treatment-demo-link:focus-visible{background:var(--yellow);color:var(--ink);opacity:1}
+.treatment-demo-link span:last-child{font-size:20px;line-height:1}
+@media(prefers-reduced-motion:reduce){.treatment-demo-link{transition:none}}
